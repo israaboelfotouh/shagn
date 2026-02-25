@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دار شجن | الهدايا بروح مكية</title>
+    <link rel="icon" href="logo/Untitled-1-02.png" type="image/png">
+    <meta
+      name="description"
+      content="دار شجن لتصميم وتنفيذ الهدايا التذكارية بروح مكية، حلول إبداعية لتنظيم المناسبات وإنتاج الهدايا والمنتجات الدعائية."
+    />
+    <!-- Tailwind build (Brando Arabic loaded via input.css) -->
+    <link rel="stylesheet" href="css/styles.css" />
+ 
+  </head>
+  <body class="min-h-screen font-sans bg-cream text-neutral-900 ">
+
+    <!-- Loader Section -->
+
+
+<!-- Loader Section -->
+<div id="preloader" class="fixed inset-0 flex items-center justify-center bg-[#771953] z-50">
+  <img             src="logo/Untitled-1-01.png" alt="Logo" class="w-28 h-28 animate-bounce">
+</div>
+
+<div id="main-content" class="opacity-0 transition-opacity duration-700">
+    <!-- Navbar -->
+    <header
+      class="fixed inset-x-0 top-0 z-30 bg-cream/90 backdrop-blur-md border-b border-neutral-200/80"
+    >
+      <nav class="container flex items-center justify-between py-4 gap-6">
+        <!-- Brand -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <img
+            src="logo/Untitled-1-01.png"
+            alt="دار شجن"
+            class="h-11 w-auto object-contain object-center transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="leading-tight">
+            <p class="text-caption font-medium text-neutral-600">مؤسسة ابتكار الهدية للهدايا</p>
+            <p class="text-body-lg font-bold text-primary">دار شجن</p>
+          </div>
+        </a>
+
+        <!-- Desktop nav -->
+        <ul
+          class="hidden md:flex items-center gap-8 text-body-sm font-medium text-neutral-700"
+        >
+          <li><a href="#about" class="transition-colors duration-250 hover:text-primary">من نحن</a></li>
+          <li><a href="#services" class="transition-colors duration-250 hover:text-primary">خدماتنا</a></li>
+          <li><a href="#works" class="transition-colors duration-250 hover:text-primary">أعمالنا</a></li>
+          <li><a href="#testimonials" class="transition-colors duration-250 hover:text-primary">عملاؤنا</a></li>
+          <li><a href="#contact" class="transition-colors duration-250 hover:text-primary">تواصل معنا</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="orders.html" class="btn-ghost py-2.5">
+            الطلبات
+          </a>
+          <a href="#contact" class="btn-primary py-2.5 px-5 text-body-sm">
+            تواصل معنا
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-brand border border-neutral-200 bg-white text-neutral-800 shadow-soft transition-colors duration-250 hover:bg-neutral-50"
+          type="button"
+          aria-label="فتح القائمة"
+          data-mobile-menu-toggle
+        >
+          <span class="sr-only">القائمة</span>
+          <svg
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 7H20M4 12H20M4 17H14"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile nav -->
+      <div
+        class="md:hidden hidden border-t border-neutral-200 bg-cream-light/98 backdrop-blur-md"
+        data-mobile-menu
+      >
+        <div class="container py-4">
+          <ul class="flex flex-col gap-1 text-body-sm font-medium text-neutral-800">
+            <li><a href="#about" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">من نحن</a></li>
+            <li><a href="#services" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">خدماتنا</a></li>
+            <li><a href="#works" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">أعمالنا</a></li>
+            <li><a href="#testimonials" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">عملاؤنا</a></li>
+            <li><a href="#contact" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">تواصل معنا</a></li>
+            <li class="pt-2 mt-2 border-t border-neutral-200">
+              <a href="orders.html" class="block rounded-brand-full border-2 border-primary bg-primary/5 px-3 py-2.5 text-primary text-center font-semibold">تعبئة نموذج الطلب</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-20 md:pt-24 font-sans">
+      <!-- Hero: solid background + right-aligned image -->
+      <section
+        id="hero"
+        class="hero-with-video relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-neutral-900"
+      >
+        <!-- Right-side background image (subtle, behind content) -->
+        <div
+          class="absolute inset-y-0 right-0 hidden w-1/2 max-w-[55%] overflow-hidden md:block"
+          aria-hidden="true"
+        >
+      
+        </div>
+
+        <!-- Dark overlay for text readability -->
+        <div
+          class="hero-overlay absolute inset-0 z-10"
+          aria-hidden="true"
+        >        <img
+        src="assets/images/Untitled-1-06.png"
+        alt="دار شجن - هدايا تحمل عبق المكان"
+        class="w-full h-full object-cover object-center w-1/2"
+      /></div>
+
+        <!-- Hero content (centered above background) -->
+        <div class="container relative z-20 flex flex-1 flex-col items-center justify-center px-4 py-16 text-center md:py-20">
+          <div class="max-w-3xl space-y-6" data-reveal>
+            <p class="section-la text-cream-light">
+              الهدايا بروح مكية
+            </p>
+            <h1 class="text-display-lg font-black leading-tight text-white drop-shadow-sm md:text-[3rem]">
+              نروي القصص، نحيي الذكريات
+              <span class="mt-1 block text-cream">ونصنع هدايا تحمل عبق المكان.</span>
+            </h1>
+            <p class="mx-auto max-w-xl text-body text-cream-light/95 leading-relaxed md:text-body-lg">
+              وُلدت دار شجن لتكون أكثر من مجرد هدايا؛ نصنع قطعاً تخلّد اللحظات
+              وتحاكي روح المكان، بلمسة من الأصالة والثقافة وجودة عالية مستمدة
+              من عمق الهوية السعودية.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3">
+              <a href="orders.html" class="btn-primary px-8 py-3.5 text-body shadow-card-hover">
+                اطلب هديتك الآن
+              </a>
+              <a href="#services" class="hero-btn-outline inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/15 hover:border-cream">
+                استكشف خدماتنا
+              </a>
+            </div>
+            <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2 text-body-sm text-cream-light/90">
+              <li class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-cream"></span>
+                <span>هدايا بروح مكية أصيلة</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-cream"></span>
+                <span>حلول إبداعية للمناسبات</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-cream"></span>
+                <span>جودة عالية وضمان مميز</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <!-- Vision, Mission & Values -->
+
+    <section id="about" class="relative overflow-hidden bg-white">
+      <!-- Soft decorative accent -->
+      <div class="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-gradient-brand opacity-[0.06] blur-3xl md:-left-10 md:top-10" aria-hidden="true"></div>
+    
+      <div class="container section-padding relative space-y-10 lg:space-y-14">
+        <!-- Section heading -->
+        <header class="max-w-3xl space-y-4" data-reveal>
+          <p class="section-label">عن دار شجن</p>
+          <h2 class="section-heading">الرؤية والرسالة وقيمنا</h2>
+          <p class="subheading text-body text-neutral-700 leading-relaxed">
+            نعيد تعريف الهدايا بوصفها تجارب متكاملة تحمل روح المكان وقدسية الرحلة، وتجمع بين الأصالة، الجمال، والبعد الإنساني في كل تفصيل.
+          </p>
+        </header>
+    
+        <!-- Row 1: Vision & Mission -->
+        <div class="grid gap-6 md:grid-cols-2 lg:gap-8" data-reveal>
+          <!-- Vision -->
+          <article class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+            <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+              <img style="width: 50px; height: auto;" src="assets/icons/vissionIcon.png" alt="الجودة"  object-contain">
+
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-body-lg font-bold text-primary">الرؤية</h3>
+              <p class="text-body-sm text-neutral-700 leading-relaxed">
+                أن نكون الوجهة الأولى للهدايا التذكارية التي تحفظ أثر الرحلة، وتحاكي روح المكان بأصالة وأناقة تعكس الهوية السعودية.
+              </p>
+            </div>
+          </article>
+    
+          <!-- Mission -->
+          <article class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+            <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+              <img style="width: 50px; height: auto;" src="assets/icons/missionIcon.png" alt="الجودة"  object-contain">
+
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-body-lg font-bold text-primary">الرسالة</h3>
+              <p class="text-body-sm text-neutral-700 leading-relaxed">
+                تصميم وتنفيذ هدايا مبتكرة تحمل قصة كل جهة وضيف، وتحوّل لحظات التكريم والضيافة إلى تجارب متكاملة تحفظ في الذاكرة.
+              </p>
+            </div>
+          </article>
+        </div>
+    
+        <!-- Row 2: Values -->
+        <div class="space-y-6" data-reveal>
+          <div class=" space-y-3">
+            <p class="section-heading">قيمنا</p>
+          </div>
+    
+          <div class="grid gap-6 md:grid-cols-2">
+            <!-- Value 1 -->
+            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img style="width: 50px; height: auto;" src="assets/icons/value1.png" alt="الجودة"  object-contain">
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-body-lg font-bold text-primary">المسؤولية المجتمعية</h3>
+                <p class="text-body-sm text-neutral-700 leading-relaxed">
+                  تمكين الأيدي العاملة من النساء، ودعم الأسر المنتجة لتكون جزءاً من منظومة الهدايا وقصصها.
+                </p>
+              </div>
+            </article>
+    
+            <!-- Value 2 -->
+            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img style="width: 50px; height: auto;" src="assets/icons/value2.png" alt="الجودة"  object-contain">
+
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-body-lg font-bold text-primary">الابتكار</h3>
+                <p class="text-body-sm text-neutral-700 leading-relaxed">
+                  تطوير حلول إبداعية للهدايا والباقات، تواكب التغيّرات وتضيف بعداً بصرياً وتجريبياً لكل تجربة.
+                </p>
+              </div>
+            </article>
+    
+            <!-- Value 3 -->
+            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img style="width: 50px; height: auto;" src="assets/icons/value3.png" alt="الجودة"  object-contain">
+
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-body-lg font-bold text-primary">الشفافية</h3>
+                <p class="text-body-sm text-neutral-700 leading-relaxed">
+                  وضوح في التواصل، وشراكات مبنية على المصداقية والثقة في كل مرحلة من مراحل العمل.
+                </p>
+              </div>
+            </article>
+    
+            <!-- Value 4 -->
+            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img style="width: 50px; height: auto;" src="assets/icons/value4.png" alt="الجودة"  object-contain">
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-body-lg font-bold text-primary">الجودة</h3>
+                <p class="text-body-sm text-neutral-700 leading-relaxed">
+                  عناية بالتفاصيل واختيار خامات ومعايير تنفيذ عالية، لضمان هدية تليق بالمناسبة وصاحبها.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Services -->
+      <section
+      id="services"
+      class="relative bg-cream border-y border-neutral-200/80 bg-no-repeat bg-left-top"
+      style="background-image: url('assets/images/Untitled-1-06.png');"
+    >
+      <div class="container section-padding space-y-12 relative z-10">
+        <header class="max-w-3xl space-y-4 mx-auto text-center" data-reveal>
+          <p class="section-label">خدماتنا</p>
+          <h2 class="section-heading">
+            حلول إبداعية للهدايا والمناسبات.
+          </h2>
+          <p class="subheading text-body text-neutral-700 leading-relaxed">
+            نقدم باقة متكاملة من الخدمات التي تجمع بين الفكرة الإبداعية
+            والتنفيذ المتقن، لتواكب احتياجات الأفراد والجهات والمؤسسات.
+          </p>
+        </header>
+      
+   
+          
+      
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article class="card-hover" data-reveal>
+              <h3 class="mb-2 text-body-lg font-bold text-neutral-900">تصميم وتنفيذ الهدايا المخصصة</h3>
+              <p class="body-copy mb-3">
+                هدايا مصممة خصيصاً للمناسبات الرسمية والشخصية، تحمل هوية الجهة وروح المناسبة.
+              </p>
+              <p class="text-caption font-semibold text-primary">أفكار مميزة – تنفيذ دقيق – تغليف أنيق</p>
+            </article>
+      
+            <article class="card-hover" data-reveal>
+              <h3 class="mb-2 text-body-lg font-bold text-neutral-900">هدايا الحاج والمعتمر</h3>
+              <p class="body-copy mb-3">
+                هدايا بروح مكية تُهدي لحجاج بيت الله والمعتمرين لتخلّد رحلة الإيمان والزيارة.
+              </p>
+              <p class="text-caption font-semibold text-primary">تصاميم مستوحاة من المشاعر المقدسة</p>
+            </article>
+      
+            <article class="card-hover" data-reveal>
+              <h3 class="mb-2 text-body-lg font-bold text-neutral-900">حلول دار شجن الإبداعية</h3>
+              <p class="text-body-sm text-neutral-700 leading-relaxed mb-3">
+                أفكار وهويات متكاملة للهدايا والباقات التذكارية بما يواكب رؤية الجهة وأهدافها.
+              </p>
+              <p class="text-caption font-semibold text-primary">من الفكرة إلى التنفيذ</p>
+            </article>
+      
+            <!-- باقي المقالات كما هي -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Works / Portfolio -->
+      <section id="works" class="bg-white">
+        <div class="container section-padding space-y-10">
+          <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6" data-reveal>
+            <div class="space-y-3 max-w-2xl">
+              <p class="section-label">أعمالنا</p>
+              <h2 class="section-heading">
+                نماذج من الدروع والهدايا الإبداعية.
+              </h2>
+              <p class="subheading text-body text-neutral-700 leading-relaxed">
+                مجموعة مختارة من الأعمال المنفذة لجهات مختلفة، تجمع بين التصميم الأنيق والرسالة العميقة.
+              </p>
+            </div>
+            <a href="works.html" class="btn-secondary shrink-0">
+              استعراض جميع الأعمال
+            </a>
+          </header>
+
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+              <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
+                <img src="assets/images/Untitled-1-04.png" alt="دروع إبداعية" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+              </div>
+              <div class="p-5 space-y-1.5">
+                <h3 class="card-title">دروع إبداعية لتكريم الشركاء</h3>
+                <p class="body-copy text-caption text-neutral-600">تصميم دروع تحمل عناصر الهوية البصرية مع تفاصيل محفورة بعناية.</p>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+              <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
+                <img src="assets/images/Untitled-1-05.png" alt="باقات هدايا الحاج والمعتمر" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+              </div>
+              <div class="p-5 space-y-1.5">
+                <h3 class="card-title">باقات هدايا الحاج والمعتمر</h3>
+                <p class="body-copy text-caption text-neutral-600">حزم متكاملة تضم قطعاً تذكارية بروح مكية، مع تغليف فاخر.</p>
+              </div>
+            </article>
+            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+              <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
+                <img src="assets/images/Untitled-1-06.png" alt="منتجات دعائية" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+              </div>
+              <div class="p-5 space-y-1.5">
+                <h3 class="card-title">منتجات دعائية لهويات مؤسسية</h3>
+                <p class="body-copy text-caption text-neutral-600">منتجات دعائية متنوعة تعكس هوية الجهة وتلامس جمهورها المستهدف.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Clients -->
+      <section
+        id="testimonials"
+        class="bg-cream border-y border-neutral-200/80"
+      >
+        <div class="container section-padding space-y-12">
+          <header class="max-w-3xl space-y-4 mx-auto text-center" data-reveal>
+            <p class="section-label">عملاؤنا</p>
+            <h2 class="section-heading">ثقة عملائنا هي أجمل هدية.</h2>
+            <p class="subheading text-body text-neutral-700 leading-relaxed">
+              نفتخر بالتعاون مع جهات متنوعة ساهمت في صناعة تجربة هدية مختلفة، ونعتز بكل شراكة صنعت أثراً.
+            </p>
+          </header>
+
+          <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] lg:grid-cols-[2fr_1.2fr] md:items-start">
+            <div class="grid gap-5" data-reveal>
+              <article
+                class="card rounded-brand-xl p-6"
+              >
+                <p class="body-copy mb-4">
+                  “تنفيذ الهدايا كان على مستوى عالٍ من الاحترافية، مع اهتمام
+                  رائع بالتفاصيل من الفكرة وحتى التغليف النهائي.”
+                </p>
+                <p class="text-caption font-medium text-neutral-900">جهة حكومية – فعالية تكريم شركاء</p>
+              </article>
+
+              <article
+                class="card rounded-brand-xl p-6"
+              >
+                <p class="body-copy mb-4">
+                  “هدايا الحجاج كانت معبّرة وتحمل روح المكان، تركت أثراً جميلاً
+                  لدى المستفيدين.”
+                </p>
+                <p class="text-caption font-medium text-neutral-900">مبادرة اجتماعية لخدمة الحجاج</p>
+              </article>
+            </div>
+
+            <aside class="card rounded-brand-2xl p-6 space-y-4" data-reveal>
+              <h3 class="text-body-lg font-bold text-neutral-900 mb-2">عملاؤنا</h3>
+              <p class="body-copy">تعاونّا مع جهات حكومية وخاصة، ومبادرات مجتمعية، ومراكز خدمية في مشاريع متنوعة للهدايا التذكارية والفعاليات.</p>
+              <ul class="body-copy space-y-1.5 text-caption">
+                <li>• جهات حكومية ومؤسسات رسمية</li>
+                <li>• مبادرات مجتمعية ومراكز خدمية</li>
+                <li>• شركات ومؤسسات قطاع خاص</li>
+              </ul>
+              <a
+                href="clients.html"
+                class="btn-secondary inline-block w-full text-center py-2.5"
+              >
+                استعراض قائمة العملاء
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="relative overflow-hidden bg-gradient-brand text-cream-light">
+        <div class="absolute inset-0 bg-neutral-900/20 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-72 h-72 bg-primary-light/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="container section-padding relative">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8" data-reveal>
+            <div class="space-y-4 max-w-2xl">
+              <p class="section-label text-cream-light/90">جاهزون لنكون جزءاً من قصتكم</p>
+              <h2 class="text-section font-bold text-white md:text-display">
+                لنصنع معاً هدية تحكي تفاصيل رحلتكم.
+              </h2>
+              <p class="body-copy text-cream-light/90">
+                سواء كنتم جهة رسمية، مؤسسة خاصة، أو مبادرة مجتمعية؛ نرافقكم من الفكرة إلى الهدية الجاهزة للتقديم.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:items-center shrink-0">
+              <a href="orders.html" class="btn-primary bg-cream-light text-primary hover:bg-white border-0 shadow-card">
+                تعبئة نموذج الطلب
+              </a>
+              <a href="#contact" class="inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light/60 bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/10 hover:border-cream-light">
+                تواصل مع فريقنا
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Footer top -->
+      <section id="contact" class="bg-white">
+        <div class="container section-padding grid gap-10 md:grid-cols-[1.4fr_1.1fr]">
+          <div class="space-y-5" data-reveal>
+            <p class="section-label">تواصل معنا</p>
+            <h2 class="section-heading">لِنكون جزءاً من قصتكم القادمة.</h2>
+            <p class="body-copy">
+              يسعدنا استقبال طلباتكم واستفساراتكم حول الهدايا، الفعاليات، والمبادرات. فريق دار شجن جاهز لمساعدتكم في اختيار الحل الأنسب.
+            </p>
+            <div class="space-y-2 text-body-sm text-neutral-800">
+              <p><span class="font-bold text-neutral-900">الجوال:</span> 0568135028</p>
+              <p><span class="font-bold text-neutral-900">البريد الإلكتروني:</span> info@shajan.com</p>
+            </div>
+          </div>
+
+          <div class="card rounded-brand-2xl p-6 space-y-5" data-reveal>
+            <h3 class="text-body-lg font-bold text-neutral-900">نموذج تواصل مختصر</h3>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-caption font-medium text-neutral-700 mb-1.5">الاسم الكامل</label>
+                <input id="name" type="text" class="input-brand" placeholder="اكتب اسمك هنا" />
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label for="phone" class="block text-caption font-medium text-neutral-700 mb-1.5">رقم الجوال</label>
+                  <input id="phone" type="tel" class="input-brand" placeholder="05XXXXXXXX" />
+                </div>
+                <div>
+                  <label for="email" class="block text-caption font-medium text-neutral-700 mb-1.5">البريد الإلكتروني</label>
+                  <input id="email" type="email" class="input-brand" placeholder="you@example.com" />
+                </div>
+              </div>
+              <div>
+                <label for="message" class="block text-caption font-medium text-neutral-700 mb-1.5">رسالتك</label>
+                <textarea id="message" rows="3" class="input-brand resize-none" placeholder="أخبرنا عن احتياجك أو نوع الهدية المطلوبة"></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full py-3">
+                إرسال الرسالة
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200 bg-cream">
+      <div class="container py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-normal text-neutral-600">
+        <p>جميع الحقوق محفوظة لمؤسسة ابتكار الهدية للهدايا – دار شجن.</p>
+        <p class="font-medium text-neutral-700">0568135028 · info@shajan.com</p>
+      </div>
+    </footer>
+  </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("main-content");
+    
+        setTimeout(() => {
+          preloader.style.opacity = 0;
+          preloader.style.transition = "opacity 0.7s ease";
+    
+          setTimeout(() => {
+            preloader.style.display = "none";
+            content.classList.remove("opacity-0");
+            content.classList.add("opacity-100");
+          }, 700);
+        }, 500); 
+      });
+    </script>
+  </body>
+</html>
