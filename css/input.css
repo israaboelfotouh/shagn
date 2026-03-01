@@ -258,7 +258,7 @@
   }
   .clients-swiper-pagination {
     position: relative;
-    margin-top: 20px;
+    margin-top: 200px !important;
   }
   .clients-swiper-pagination .swiper-pagination-bullet {
     width: 8px;
