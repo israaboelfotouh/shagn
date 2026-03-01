@@ -146,7 +146,7 @@
   }
 
   .section-label {
-    @apply text-overline font-black uppercase tracking-widest text-primary;
+    @apply text-overline font-bold uppercase tracking-widest text-primary;
   }
 
   .input-brand {
@@ -189,6 +189,93 @@
 
   .hero-btn-outline:focus {
     @apply outline-none ring-2 ring-cream ring-offset-2 ring-offset-transparent;
+  }
+
+  /* Modal overlay and panel */
+  .modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300;
+  }
+  .modal-overlay.is-open {
+    @apply opacity-100 pointer-events-auto;
+  }
+  .modal-backdrop {
+    @apply absolute inset-0 bg-neutral-900/60 backdrop-blur-sm;
+  }
+  .modal-panel {
+    @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-brand-2xl border border-neutral-200 bg-white shadow-card transition-transform duration-300 scale-95;
+  }
+  .modal-overlay.is-open .modal-panel {
+    @apply scale-100;
+  }
+
+  .client-logo-item img {
+    filter: grayscale(0.12);
+    transition: filter 0.25s ease, transform 0.25s ease;
+  }
+  .client-logo-item:hover img {
+    filter: grayscale(0);
+  }
+
+  /* Clients Swiper: arrows + pagination */
+  .clients-swiper {
+    padding: 0 48px 40px;
+  }
+  @media (min-width: 768px) {
+    .clients-swiper {
+      padding: 0 56px 48px;
+    }
+  }
+  .clients-swiper-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid #d4c4b8;
+    background: #fff;
+    color: #771953;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+  }
+  .clients-swiper-btn:hover {
+    background: #771953;
+    color: #fff;
+    border-color: #771953;
+    box-shadow: 0 4px 12px rgba(119, 25, 83, 0.25);
+  }
+  .clients-swiper-prev {
+    right: 0;
+    left: auto;
+  }
+  .clients-swiper-next {
+    left: 0;
+    right: auto;
+  }
+  .clients-swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+  }
+  .clients-swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #b8a090;
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+  .clients-swiper-pagination .swiper-pagination-bullet-active {
+    background: #771953;
+    transform: scale(1.2);
+  }
+  .clients-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

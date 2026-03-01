@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>دار شجن | الهدايا بروح مكية</title>
-    <link rel="icon" href="logo/Untitled-1-02.png" type="image/png">
-    <meta
-      name="description"
-      content="دار شجن لتصميم وتنفيذ الهدايا التذكارية بروح مكية، حلول إبداعية لتنظيم المناسبات وإنتاج الهدايا والمنتجات الدعائية."
-    />
-    <!-- Tailwind build (Brando Arabic loaded via input.css) -->
-    <link rel="stylesheet" href="css/styles.css" />
- 
-  </head>
-  <body class="min-h-screen font-sans bg-cream text-neutral-900 ">
 
-    <!-- Loader Section -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دار شجن | الهدايا بروح مكية</title>
+  <link rel="icon" href="logo/Untitled-1-02.png" type="image/png">
+  <meta name="description"
+    content="دار شجن لتصميم وتنفيذ الهدايا التذكارية بروح مكية، حلول إبداعية لتنظيم المناسبات وإنتاج الهدايا والمنتجات الدعائية." />
+  <!-- Tailwind build (Brando Arabic loaded via input.css) -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="min-h-screen font-sans bg-cream text-neutral-900 ">
+
+  <!-- Loader Section -->
 
 
-<!-- Loader Section -->
-<div id="preloader" class="fixed inset-0 flex items-center justify-center bg-[#771953] z-50">
-  <img             src="logo/Untitled-1-01.png" alt="Logo" class="w-28 h-28 animate-bounce">
-</div>
+  <!-- Loader Section -->
+  <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-[#771953] z-50">
+    <img src="logo/Untitled-1-01.png" alt="Logo" class="w-28 h-28 animate-bounce">
+  </div>
 
-<div id="main-content" class="opacity-0 transition-opacity duration-700">
+  <div id="main-content" class="opacity-0 transition-opacity duration-700">
     <!-- Navbar -->
-    <header
-      class="fixed inset-x-0 top-0 z-30 bg-cream/90 backdrop-blur-md border-b border-neutral-200/80"
-    >
+    <header class="fixed inset-x-0 top-0 z-30 bg-cream/90 backdrop-blur-md border-b border-neutral-200/80">
       <nav class="container flex items-center justify-between py-4 gap-6">
         <!-- Brand -->
         <a href="#hero" class="flex items-center gap-3 group">
-          <img
-            src="logo/Untitled-1-01.png"
-            alt="دار شجن"
-            class="h-11 w-auto object-contain object-center transition-transform duration-300 group-hover:scale-105"
-          />
+          <img src="logo/Untitled-1-01.png" alt="دار شجن"
+            class="h-11 w-auto object-contain object-center transition-transform duration-300 group-hover:scale-105" />
           <div class="leading-tight">
             <p class="text-caption font-medium text-neutral-600">مؤسسة ابتكار الهدية للهدايا</p>
             <p class="text-body-lg font-bold text-primary">دار شجن</p>
@@ -43,21 +39,20 @@
         </a>
 
         <!-- Desktop nav -->
-        <ul
-          class="hidden md:flex items-center gap-8 text-body-sm font-medium text-neutral-700"
-        >
+        <ul class="hidden md:flex items-center gap-8 text-body-sm font-medium text-neutral-700">
           <li><a href="#about" class="transition-colors duration-250 hover:text-primary">من نحن</a></li>
           <li><a href="#services" class="transition-colors duration-250 hover:text-primary">خدماتنا</a></li>
           <li><a href="#works" class="transition-colors duration-250 hover:text-primary">أعمالنا</a></li>
           <li><a href="#testimonials" class="transition-colors duration-250 hover:text-primary">عملاؤنا</a></li>
+          <li><a href="#video" class="transition-colors duration-250 hover:text-primary">الفيديو</a></li>
           <li><a href="#contact" class="transition-colors duration-250 hover:text-primary">تواصل معنا</a></li>
         </ul>
 
         <!-- Actions -->
         <div class="hidden md:flex items-center gap-4">
-          <a href="orders.html" class="btn-ghost py-2.5">
+          <button type="button" data-modal-open="order" class="btn-ghost py-2.5">
             الطلبات
-          </a>
+          </button>
           <a href="#contact" class="btn-primary py-2.5 px-5 text-body-sm">
             تواصل معنا
           </a>
@@ -66,41 +61,40 @@
         <!-- Mobile menu button -->
         <button
           class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-brand border border-neutral-200 bg-white text-neutral-800 shadow-soft transition-colors duration-250 hover:bg-neutral-50"
-          type="button"
-          aria-label="فتح القائمة"
-          data-mobile-menu-toggle
-        >
+          type="button" aria-label="فتح القائمة" data-mobile-menu-toggle>
           <span class="sr-only">القائمة</span>
-          <svg
-            class="h-5 w-5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 7H20M4 12H20M4 17H14"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 7H20M4 12H20M4 17H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
           </svg>
         </button>
       </nav>
 
       <!-- Mobile nav -->
-      <div
-        class="md:hidden hidden border-t border-neutral-200 bg-cream-light/98 backdrop-blur-md"
-        data-mobile-menu
-      >
+      <div class="md:hidden hidden border-t border-neutral-200 bg-cream-light/98 backdrop-blur-md" data-mobile-menu>
         <div class="container py-4">
           <ul class="flex flex-col gap-1 text-body-sm font-medium text-neutral-800">
-            <li><a href="#about" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">من نحن</a></li>
-            <li><a href="#services" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">خدماتنا</a></li>
-            <li><a href="#works" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">أعمالنا</a></li>
-            <li><a href="#testimonials" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">عملاؤنا</a></li>
-            <li><a href="#contact" class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">تواصل معنا</a></li>
+            <li><a href="#about"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">من
+                نحن</a></li>
+            <li><a href="#services"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">خدماتنا</a>
+            </li>
+            <li><a href="#works"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">أعمالنا</a>
+            </li>
+            <li><a href="#testimonials"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">عملاؤنا</a>
+            </li>
+            <li><a href="#video"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">الفيديو</a>
+            </li>
+            <li><a href="#contact"
+                class="block rounded-brand px-3 py-2.5 transition-colors duration-250 hover:bg-primary/5 hover:text-primary">تواصل
+                معنا</a></li>
             <li class="pt-2 mt-2 border-t border-neutral-200">
-              <a href="orders.html" class="block rounded-brand-full border-2 border-primary bg-primary/5 px-3 py-2.5 text-primary text-center font-semibold">تعبئة نموذج الطلب</a>
+              <button type="button" data-modal-open="order"
+                class="w-full block rounded-brand-full border-2 border-primary bg-primary/5 px-3 py-2.5 text-primary text-center font-semibold">تعبئة
+                نموذج الطلب</button>
             </li>
           </ul>
         </div>
@@ -109,33 +103,26 @@
 
     <main class="pt-20 md:pt-24 font-sans">
       <!-- Hero: solid background + right-aligned image -->
-      <section
-        id="hero"
-        class="hero-with-video relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-neutral-900"
-      >
+      <section id="hero"
+        class="hero-with-video relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-neutral-900">
         <!-- Right-side background image (subtle, behind content) -->
-        <div
-          class="absolute inset-y-0 right-0 hidden w-1/2 max-w-[55%] overflow-hidden md:block"
-          aria-hidden="true"
-        >
-      
+        <div class="absolute inset-y-0 right-0 hidden w-1/2 max-w-[55%] overflow-hidden md:block" aria-hidden="true">
+
         </div>
 
         <!-- Dark overlay for text readability -->
-        <div
-          class="hero-overlay absolute inset-0 z-10"
-          aria-hidden="true"
-        >        <img
-        src="assets/images/Untitled-1-06.png"
-        alt="دار شجن - هدايا تحمل عبق المكان"
-        class="w-full h-full object-cover object-center w-1/2"
-      /></div>
+        <div class="hero-overlay absolute inset-0 z-10" aria-hidden="true"> <img src="assets/images/Untitled-1-06.png"
+            alt="دار شجن - هدايا تحمل عبق المكان" class="w-full h-full object-cover object-center w-1/2" /></div>
 
         <!-- Hero content (centered above background) -->
-        <div class="container relative z-20 flex flex-1 flex-col items-center justify-center px-4 py-16 text-center md:py-20">
+        <div
+          class="container relative z-20 flex flex-1 flex-col items-center justify-center px-4 py-16 text-center md:py-20">
           <div class="max-w-3xl space-y-6" data-reveal>
-            <p class="section-la text-cream-light">
-              الهدايا بروح مكية
+            <p class="section-label text-cream-light/90">
+              نمثّل هويتك، ونصنع حدثك
+            </p>
+            <p class="text-body-sm text-cream-light/80">
+              مؤسسة ابتكار الهدية للهدايا (دار شجن)
             </p>
             <h1 class="text-display-lg font-black leading-tight text-white drop-shadow-sm md:text-[3rem]">
               نروي القصص، نحيي الذكريات
@@ -147,10 +134,11 @@
               من عمق الهوية السعودية.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-3">
-              <a href="orders.html" class="btn-primary px-8 py-3.5 text-body shadow-card-hover">
+              <button type="button" data-modal-open="order" class="btn-primary px-8 py-3.5 text-body shadow-card-hover">
                 اطلب هديتك الآن
-              </a>
-              <a href="#services" class="hero-btn-outline inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/15 hover:border-cream">
+              </button>
+              <a href="#services"
+                class="hero-btn-outline inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/15 hover:border-cream">
                 استكشف خدماتنا
               </a>
             </div>
@@ -172,138 +160,172 @@
         </div>
       </section>
 
-    <!-- Vision, Mission & Values -->
 
-    <section id="about" class="relative overflow-hidden bg-white">
-      <!-- Soft decorative accent -->
-      <div class="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-gradient-brand opacity-[0.06] blur-3xl md:-left-10 md:top-10" aria-hidden="true"></div>
-    
-      <div class="container section-padding relative space-y-10 lg:space-y-14">
-        <!-- Section heading -->
-        <header class="max-w-3xl space-y-4" data-reveal>
-          <p class="section-label">عن دار شجن</p>
-          <h2 class="section-heading">الرؤية والرسالة وقيمنا</h2>
-          <p class="subheading text-body text-neutral-700 leading-relaxed">
-            نعيد تعريف الهدايا بوصفها تجارب متكاملة تحمل روح المكان وقدسية الرحلة، وتجمع بين الأصالة، الجمال، والبعد الإنساني في كل تفصيل.
-          </p>
-        </header>
-    
-        <!-- Row 1: Vision & Mission -->
-        <div class="grid gap-6 md:grid-cols-2 lg:gap-8" data-reveal>
-          <!-- Vision -->
-          <article class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-            <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-              <img style="width: 50px; height: auto;" src="assets/icons/vissionIcon.png" alt="الجودة"  object-contain">
-
-            </div>
-            <div class="space-y-2">
-              <h3 class="text-body-lg font-bold text-primary">الرؤية</h3>
-              <p class="text-body-sm text-neutral-700 leading-relaxed">
-                أن نكون الوجهة الأولى للهدايا التذكارية التي تحفظ أثر الرحلة، وتحاكي روح المكان بأصالة وأناقة تعكس الهوية السعودية.
-              </p>
-            </div>
-          </article>
-    
-          <!-- Mission -->
-          <article class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-            <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-              <img style="width: 50px; height: auto;" src="assets/icons/missionIcon.png" alt="الجودة"  object-contain">
-
-            </div>
-            <div class="space-y-2">
-              <h3 class="text-body-lg font-bold text-primary">الرسالة</h3>
-              <p class="text-body-sm text-neutral-700 leading-relaxed">
-                تصميم وتنفيذ هدايا مبتكرة تحمل قصة كل جهة وضيف، وتحوّل لحظات التكريم والضيافة إلى تجارب متكاملة تحفظ في الذاكرة.
-              </p>
-            </div>
-          </article>
-        </div>
-    
-        <!-- Row 2: Values -->
-        <div class="space-y-6" data-reveal>
-          <div class=" space-y-3">
-            <p class="section-heading">قيمنا</p>
+      <!-- Video -->
+      <section id="video" class="bg-white">
+        <div class="container section-padding">
+          <header class="max-w-3xl space-y-4 mx-auto text-center mb-10" data-reveal>
+            <p class="section-label">الفيديو</p>
+            <h2 class="section-heading">تعرف على دار شجن</h2>
+            <p class="subheading text-body text-neutral-700 leading-relaxed">
+              شاهد إعلان دار شجن وتعرف على رؤيتنا وخدماتنا.
+            </p>
+          </header>
+          <div
+            class="max-w-4xl mx-auto rounded-brand-2xl overflow-hidden border border-neutral-200 shadow-soft bg-neutral-100 aspect-video flex items-center justify-center"
+            data-reveal>
+            <!-- <p class="text-body text-neutral-500 px-4">يمكن إضافة فيديو (يوتيوب أو محلي) هنا لاحقاً.</p> -->
+            <video src="assets/videos/اعلان دار شجن(4) (1).mp4" class="w-full h-full object-cover" controls></video>
           </div>
-    
-          <div class="grid gap-6 md:grid-cols-2">
-            <!-- Value 1 -->
-            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-                <img style="width: 50px; height: auto;" src="assets/icons/value1.png" alt="الجودة"  object-contain">
-              </div>
-              <div class="space-y-2">
-                <h3 class="text-body-lg font-bold text-primary">المسؤولية المجتمعية</h3>
-                <p class="text-body-sm text-neutral-700 leading-relaxed">
-                  تمكين الأيدي العاملة من النساء، ودعم الأسر المنتجة لتكون جزءاً من منظومة الهدايا وقصصها.
-                </p>
-              </div>
-            </article>
-    
-            <!-- Value 2 -->
-            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-                <img style="width: 50px; height: auto;" src="assets/icons/value2.png" alt="الجودة"  object-contain">
+        </div>
+      </section>
+
+      <!-- Vision, Mission & Values -->
+
+      <section id="about" class="relative overflow-hidden bg-white">
+        <!-- Soft decorative accent -->
+        <div
+          class="pointer-events-none absolute -left-24 top-0 h-64 w-64 rounded-full bg-gradient-brand opacity-[0.06] blur-3xl md:-left-10 md:top-10"
+          aria-hidden="true"></div>
+
+        <div class="container section-padding relative space-y-10 lg:space-y-14">
+          <!-- Section heading -->
+          <header class="max-w-3xl space-y-4" data-reveal>
+            <p class="section-label">عن دار شجن</p>
+            <h2 class="section-heading">الرؤية والرسالة وقيمنا</h2>
+            <p class="subheading text-body text-neutral-700 leading-relaxed">
+              نعيد تعريف الهدايا بوصفها تجارب متكاملة تحمل روح المكان وقدسية الرحلة، وتجمع بين الأصالة، الجمال، والبعد
+              الإنساني في كل تفصيل.
+            </p>
+          </header>
+
+          <!-- Row 1: Vision & Mission -->
+          <div class="grid gap-6 md:grid-cols-2 lg:gap-8" data-reveal>
+            <!-- Vision -->
+            <article
+              class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img class="w-10 h-10 object-contain" src="assets/icons/vissionIcon.png" alt="الرؤية">
 
               </div>
               <div class="space-y-2">
-                <h3 class="text-body-lg font-bold text-primary">الابتكار</h3>
+                <h3 class="text-body-lg font-bold text-primary">الرؤية</h3>
                 <p class="text-body-sm text-neutral-700 leading-relaxed">
-                  تطوير حلول إبداعية للهدايا والباقات، تواكب التغيّرات وتضيف بعداً بصرياً وتجريبياً لكل تجربة.
+                  أن نكون الوجهة الأولى للهدايا التذكارية التي تحفظ أثر الرحلة، وتحاكي روح المكان بأصالة وأناقة تعكس
+                  الهوية السعودية.
                 </p>
               </div>
             </article>
-    
-            <!-- Value 3 -->
-            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-                <img style="width: 50px; height: auto;" src="assets/icons/value3.png" alt="الجودة"  object-contain">
+
+            <!-- Mission -->
+            <article
+              class="group flex items-start gap-4  py-6 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                class="flex shrink-0 items-center justify-center rounded-[8px]">
+                <img class="w-10 h-10 object-contain" src="assets/icons/missionIcon.png" alt="الرسالة">
 
               </div>
               <div class="space-y-2">
-                <h3 class="text-body-lg font-bold text-primary">الشفافية</h3>
+                <h3 class="text-body-lg font-bold text-primary">الرسالة</h3>
                 <p class="text-body-sm text-neutral-700 leading-relaxed">
-                  وضوح في التواصل، وشراكات مبنية على المصداقية والثقة في كل مرحلة من مراحل العمل.
-                </p>
-              </div>
-            </article>
-    
-            <!-- Value 4 -->
-            <article class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
-              <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;" class="flex shrink-0 items-center justify-center rounded-[8px]">
-                <img style="width: 50px; height: auto;" src="assets/icons/value4.png" alt="الجودة"  object-contain">
-              </div>
-              <div class="space-y-2">
-                <h3 class="text-body-lg font-bold text-primary">الجودة</h3>
-                <p class="text-body-sm text-neutral-700 leading-relaxed">
-                  عناية بالتفاصيل واختيار خامات ومعايير تنفيذ عالية، لضمان هدية تليق بالمناسبة وصاحبها.
+                  تصميم وتنفيذ هدايا مبتكرة تحمل قصة كل جهة وضيف، وتحوّل لحظات التكريم والضيافة إلى تجارب متكاملة تحفظ
+                  في الذاكرة.
                 </p>
               </div>
             </article>
           </div>
+
+          <!-- Row 2: Values -->
+          <div class="space-y-6" data-reveal>
+            <div class=" space-y-3">
+              <p class="section-heading">قيمنا</p>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+              <!-- Value 1 -->
+              <article
+                class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+                <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                  class="flex shrink-0 items-center justify-center rounded-[8px]">
+                  <img class="w-10 h-10 object-contain" src="assets/icons/value1.png" alt="المسؤولية المجتمعية">
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-body-lg font-bold text-primary">المسؤولية المجتمعية</h3>
+                  <p class="text-body-sm text-neutral-700 leading-relaxed">
+                    تمكين الأيدي العاملة من النساء، ودعم الأسر المنتجة لتكون جزءاً من منظومة الهدايا وقصصها.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Value 2 -->
+              <article
+                class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+                <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                  class="flex shrink-0 items-center justify-center rounded-[8px]">
+                  <img class="w-10 h-10 object-contain" src="assets/icons/value2.png" alt="الابتكار">
+
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-body-lg font-bold text-primary">الابتكار</h3>
+                  <p class="text-body-sm text-neutral-700 leading-relaxed">
+                    تطوير حلول إبداعية للهدايا والباقات، تواكب التغيّرات وتضيف بعداً بصرياً وتجريبياً لكل تجربة.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Value 3 -->
+              <article
+                class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+                <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                  class="flex shrink-0 items-center justify-center rounded-[8px]">
+                  <img class="w-10 h-10 object-contain" src="assets/icons/value3.png" alt="الشفافية">
+
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-body-lg font-bold text-primary">الشفافية</h3>
+                  <p class="text-body-sm text-neutral-700 leading-relaxed">
+                    وضوح في التواصل، وشراكات مبنية على المصداقية والثقة في كل مرحلة من مراحل العمل.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Value 4 -->
+              <article
+                class="group flex items-start gap-4 py-5 shadow-soft/0 transition-all duration-350 hover:-translate-y-1 hover:shadow-soft">
+                <div style="background-color: #771953; width: 80px; height: 80px; border-radius: 8px;"
+                  class="flex shrink-0 items-center justify-center rounded-[8px]">
+                  <img class="w-10 h-10 object-contain" src="assets/icons/value4.png" alt="الجودة">
+                </div>
+                <div class="space-y-2">
+                  <h3 class="text-body-lg font-bold text-primary">الجودة</h3>
+                  <p class="text-body-sm text-neutral-700 leading-relaxed">
+                    عناية بالتفاصيل واختيار خامات ومعايير تنفيذ عالية، لضمان هدية تليق بالمناسبة وصاحبها.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
       <!-- Services -->
-      <section
-      id="services"
-      class="relative bg-cream border-y border-neutral-200/80 bg-no-repeat bg-left-top"
-      style="background-image: url('assets/images/Untitled-1-06.png');"
-    >
-      <div class="container section-padding space-y-12 relative z-10">
-        <header class="max-w-3xl space-y-4 mx-auto text-center" data-reveal>
-          <p class="section-label">خدماتنا</p>
-          <h2 class="section-heading">
-            حلول إبداعية للهدايا والمناسبات.
-          </h2>
-          <p class="subheading text-body text-neutral-700 leading-relaxed">
-            نقدم باقة متكاملة من الخدمات التي تجمع بين الفكرة الإبداعية
-            والتنفيذ المتقن، لتواكب احتياجات الأفراد والجهات والمؤسسات.
-          </p>
-        </header>
-      
-   
-          
-      
+      <section id="services" class="relative bg-cream border-y border-neutral-200/80 bg-no-repeat bg-left-top"
+        style="background-image: url('assets/images/Untitled-1-06.png');">
+        <div class="container section-padding space-y-12 relative z-10">
+          <header class="max-w-3xl space-y-4 mx-auto text-center" data-reveal>
+            <p class="section-label">خدماتنا</p>
+            <h2 class="section-heading">
+              حلول إبداعية للهدايا والمناسبات.
+            </h2>
+            <p class="subheading text-body text-neutral-700 leading-relaxed">
+              نقدم باقة متكاملة من الخدمات التي تجمع بين الفكرة الإبداعية
+              والتنفيذ المتقن، لتواكب احتياجات الأفراد والجهات والمؤسسات.
+            </p>
+          </header>
+
+
+
+
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <article class="card-hover" data-reveal>
               <h3 class="mb-2 text-body-lg font-bold text-neutral-900">تصميم وتنفيذ الهدايا المخصصة</h3>
@@ -312,7 +334,7 @@
               </p>
               <p class="text-caption font-semibold text-primary">أفكار مميزة – تنفيذ دقيق – تغليف أنيق</p>
             </article>
-      
+
             <article class="card-hover" data-reveal>
               <h3 class="mb-2 text-body-lg font-bold text-neutral-900">هدايا الحاج والمعتمر</h3>
               <p class="body-copy mb-3">
@@ -320,7 +342,7 @@
               </p>
               <p class="text-caption font-semibold text-primary">تصاميم مستوحاة من المشاعر المقدسة</p>
             </article>
-      
+
             <article class="card-hover" data-reveal>
               <h3 class="mb-2 text-body-lg font-bold text-neutral-900">حلول دار شجن الإبداعية</h3>
               <p class="text-body-sm text-neutral-700 leading-relaxed mb-3">
@@ -328,7 +350,7 @@
               </p>
               <p class="text-caption font-semibold text-primary">من الفكرة إلى التنفيذ</p>
             </article>
-      
+
             <!-- باقي المقالات كما هي -->
           </div>
         </div>
@@ -347,37 +369,49 @@
                 مجموعة مختارة من الأعمال المنفذة لجهات مختلفة، تجمع بين التصميم الأنيق والرسالة العميقة.
               </p>
             </div>
-            <a href="works.html" class="btn-secondary shrink-0">
-              استعراض جميع الأعمال
+            <a href="#works" class="btn-secondary shrink-0">
+              استعراض الأعمال
             </a>
           </header>
 
           <div class="grid gap-6 md:grid-cols-3">
-            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+            <article
+              class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1"
+              data-reveal>
               <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
-                <img src="assets/images/Untitled-1-04.png" alt="دروع إبداعية" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+                <img src="assets/images/Untitled-1-04.png" alt="دروع إبداعية"
+                  class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
               </div>
               <div class="p-5 space-y-1.5">
                 <h3 class="card-title">دروع إبداعية لتكريم الشركاء</h3>
-                <p class="body-copy text-caption text-neutral-600">تصميم دروع تحمل عناصر الهوية البصرية مع تفاصيل محفورة بعناية.</p>
+                <p class="body-copy text-caption text-neutral-600">تصميم دروع تحمل عناصر الهوية البصرية مع تفاصيل محفورة
+                  بعناية.</p>
               </div>
             </article>
-            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+            <article
+              class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1"
+              data-reveal>
               <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
-                <img src="assets/images/Untitled-1-05.png" alt="باقات هدايا الحاج والمعتمر" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+                <img src="assets/images/Untitled-1-05.png" alt="باقات هدايا الحاج والمعتمر"
+                  class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
               </div>
               <div class="p-5 space-y-1.5">
                 <h3 class="card-title">باقات هدايا الحاج والمعتمر</h3>
-                <p class="body-copy text-caption text-neutral-600">حزم متكاملة تضم قطعاً تذكارية بروح مكية، مع تغليف فاخر.</p>
+                <p class="body-copy text-caption text-neutral-600">حزم متكاملة تضم قطعاً تذكارية بروح مكية، مع تغليف
+                  فاخر.</p>
               </div>
             </article>
-            <article class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1" data-reveal>
+            <article
+              class="group overflow-hidden rounded-brand-2xl border border-neutral-200 bg-white shadow-soft transition-all duration-350 hover:shadow-card hover:border-primary/20 hover:-translate-y-1"
+              data-reveal>
               <div class="aspect-[4/3] overflow-hidden bg-neutral-100">
-                <img src="assets/images/Untitled-1-06.png" alt="منتجات دعائية" class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
+                <img src="assets/images/Untitled-1-06.png" alt="منتجات دعائية"
+                  class="h-full w-full object-cover transition-transform duration-350 group-hover:scale-105" />
               </div>
               <div class="p-5 space-y-1.5">
                 <h3 class="card-title">منتجات دعائية لهويات مؤسسية</h3>
-                <p class="body-copy text-caption text-neutral-600">منتجات دعائية متنوعة تعكس هوية الجهة وتلامس جمهورها المستهدف.</p>
+                <p class="body-copy text-caption text-neutral-600">منتجات دعائية متنوعة تعكس هوية الجهة وتلامس جمهورها
+                  المستهدف.</p>
               </div>
             </article>
           </div>
@@ -385,10 +419,7 @@
       </section>
 
       <!-- Testimonials / Clients -->
-      <section
-        id="testimonials"
-        class="bg-cream border-y border-neutral-200/80"
-      >
+      <section id="testimonials" class="bg-cream border-y border-neutral-200/80">
         <div class="container section-padding space-y-12">
           <header class="max-w-3xl space-y-4 mx-auto text-center" data-reveal>
             <p class="section-label">عملاؤنا</p>
@@ -398,11 +429,27 @@
             </p>
           </header>
 
+          <!-- Client logos: Swiper carousel (dynamic list, infinite loop, arrows + dots) -->
+          <div class="clients-logos-wrapper py-4 md:py-6 relative" data-reveal>
+            <div class="swiper clients-swiper overflow-hidden">
+              <div class="swiper-wrapper" id="clients-swiper-wrapper"></div>
+              <button type="button" class="clients-swiper-btn clients-swiper-prev" aria-label="السابق">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button type="button" class="clients-swiper-btn clients-swiper-next" aria-label="التالي">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <div class="swiper-pagination clients-swiper-pagination"></div>
+            </div>
+          </div>
+
           <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] lg:grid-cols-[2fr_1.2fr] md:items-start">
             <div class="grid gap-5" data-reveal>
-              <article
-                class="card rounded-brand-xl p-6"
-              >
+              <article class="card rounded-brand-xl p-6">
                 <p class="body-copy mb-4">
                   “تنفيذ الهدايا كان على مستوى عالٍ من الاحترافية، مع اهتمام
                   رائع بالتفاصيل من الفكرة وحتى التغليف النهائي.”
@@ -410,9 +457,7 @@
                 <p class="text-caption font-medium text-neutral-900">جهة حكومية – فعالية تكريم شركاء</p>
               </article>
 
-              <article
-                class="card rounded-brand-xl p-6"
-              >
+              <article class="card rounded-brand-xl p-6">
                 <p class="body-copy mb-4">
                   “هدايا الحجاج كانت معبّرة وتحمل روح المكان، تركت أثراً جميلاً
                   لدى المستفيدين.”
@@ -423,27 +468,29 @@
 
             <aside class="card rounded-brand-2xl p-6 space-y-4" data-reveal>
               <h3 class="text-body-lg font-bold text-neutral-900 mb-2">عملاؤنا</h3>
-              <p class="body-copy">تعاونّا مع جهات حكومية وخاصة، ومبادرات مجتمعية، ومراكز خدمية في مشاريع متنوعة للهدايا التذكارية والفعاليات.</p>
+              <p class="body-copy">تعاونّا مع جهات حكومية وخاصة، ومبادرات مجتمعية، ومراكز خدمية في مشاريع متنوعة للهدايا
+                التذكارية والفعاليات.</p>
               <ul class="body-copy space-y-1.5 text-caption">
                 <li>• جهات حكومية ومؤسسات رسمية</li>
                 <li>• مبادرات مجتمعية ومراكز خدمية</li>
                 <li>• شركات ومؤسسات قطاع خاص</li>
               </ul>
-              <a
-                href="clients.html"
-                class="btn-secondary inline-block w-full text-center py-2.5"
-              >
+              <button type="button" data-modal-open="clients" class="btn-secondary w-full py-2.5">
                 استعراض قائمة العملاء
-              </a>
+              </button>
             </aside>
           </div>
         </div>
       </section>
 
+
+
       <!-- CTA -->
       <section id="cta" class="relative overflow-hidden bg-gradient-brand text-cream-light">
         <div class="absolute inset-0 bg-neutral-900/20 pointer-events-none"></div>
-        <div class="absolute top-0 right-0 w-72 h-72 bg-primary-light/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div
+          class="absolute top-0 right-0 w-72 h-72 bg-primary-light/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
         <div class="container section-padding relative">
           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8" data-reveal>
             <div class="space-y-4 max-w-2xl">
@@ -456,10 +503,12 @@
               </p>
             </div>
             <div class="flex flex-col sm:flex-row gap-3 sm:items-center shrink-0">
-              <a href="orders.html" class="btn-primary bg-cream-light text-primary hover:bg-white border-0 shadow-card">
+              <button type="button" data-modal-open="order"
+                class="btn-primary bg-cream-light text-primary hover:bg-white border-0 shadow-card">
                 تعبئة نموذج الطلب
-              </a>
-              <a href="#contact" class="inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light/60 bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/10 hover:border-cream-light">
+              </button>
+              <a href="#contact"
+                class="inline-flex items-center justify-center rounded-brand-full border-2 border-cream-light/60 bg-transparent px-6 py-3 text-body-sm font-semibold text-cream-light transition-all duration-350 hover:bg-cream-light/10 hover:border-cream-light">
                 تواصل مع فريقنا
               </a>
             </div>
@@ -474,7 +523,8 @@
             <p class="section-label">تواصل معنا</p>
             <h2 class="section-heading">لِنكون جزءاً من قصتكم القادمة.</h2>
             <p class="body-copy">
-              يسعدنا استقبال طلباتكم واستفساراتكم حول الهدايا، الفعاليات، والمبادرات. فريق دار شجن جاهز لمساعدتكم في اختيار الحل الأنسب.
+              يسعدنا استقبال طلباتكم واستفساراتكم حول الهدايا، الفعاليات، والمبادرات. فريق دار شجن جاهز لمساعدتكم في
+              اختيار الحل الأنسب.
             </p>
             <div class="space-y-2 text-body-sm text-neutral-800">
               <p><span class="font-bold text-neutral-900">الجوال:</span> 0568135028</p>
@@ -495,13 +545,15 @@
                   <input id="phone" type="tel" class="input-brand" placeholder="05XXXXXXXX" />
                 </div>
                 <div>
-                  <label for="email" class="block text-caption font-medium text-neutral-700 mb-1.5">البريد الإلكتروني</label>
+                  <label for="email" class="block text-caption font-medium text-neutral-700 mb-1.5">البريد
+                    الإلكتروني</label>
                   <input id="email" type="email" class="input-brand" placeholder="you@example.com" />
                 </div>
               </div>
               <div>
                 <label for="message" class="block text-caption font-medium text-neutral-700 mb-1.5">رسالتك</label>
-                <textarea id="message" rows="3" class="input-brand resize-none" placeholder="أخبرنا عن احتياجك أو نوع الهدية المطلوبة"></textarea>
+                <textarea id="message" rows="3" class="input-brand resize-none"
+                  placeholder="أخبرنا عن احتياجك أو نوع الهدية المطلوبة"></textarea>
               </div>
               <button type="submit" class="btn-primary w-full py-3">
                 إرسال الرسالة
@@ -515,30 +567,123 @@
 
     <!-- Footer -->
     <footer class="border-t border-neutral-200 bg-cream">
-      <div class="container py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-normal text-neutral-600">
-        <p>جميع الحقوق محفوظة لمؤسسة ابتكار الهدية للهدايا – دار شجن.</p>
-        <p class="font-medium text-neutral-700">0568135028 · info@shajan.com</p>
+      <div class="container py-6 md:py-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6 text-body-sm font-normal text-neutral-600">
+          <p>جميع الحقوق محفوظة لمؤسسة ابتكار الهدية للهدايا – دار شجن.</p>
+          <p class="font-medium text-neutral-700">0568135028 · info@shajan.com</p>
+        </div>
+        <div
+          class="mt-4 pt-4 border-t border-neutral-200 flex flex-wrap items-center justify-center gap-6 text-body-sm">
+          <span class="text-neutral-500">وسائل التواصل:</span>
+          <a href="https://linktr.ee/darshajan" target="_blank" rel="noopener noreferrer"
+            class="text-primary font-medium hover:underline">لينكتري</a>
+          <a href="https://www.instagram.com/darshajan" target="_blank" rel="noopener noreferrer"
+            class="text-primary font-medium hover:underline">انستغرام</a>
+          <a href="https://x.com/darshajan" target="_blank" rel="noopener noreferrer"
+            class="text-primary font-medium hover:underline">اكس</a>
+          <a href="https://www.linkedin.com/in/darshajan-sa" target="_blank" rel="noopener noreferrer"
+            class="text-primary font-medium hover:underline">لينكدإن</a>
+          <a href="https://www.tiktok.com/@darshajan" target="_blank" rel="noopener noreferrer"
+            class="text-primary font-medium hover:underline">تيك توك</a>
+        </div>
       </div>
     </footer>
   </div>
 
-    <script src="js/main.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader");
-        const content = document.getElementById("main-content");
-    
+  <!-- Order modal -->
+  <div id="modal-order" class="modal-overlay" data-modal="order" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel m-4">
+      <div class="p-6 md:p-8">
+        <div class="flex items-start justify-between gap-4 mb-6">
+          <h2 class="section-heading text-primary">تعبئة نموذج الطلب</h2>
+          <button type="button"
+            class="p-2 rounded-brand text-neutral-500 hover:bg-neutral-100 hover:text-neutral-800 transition-colors"
+            data-modal-close aria-label="إغلاق">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <p class="body-copy mb-6">
+          لتصميم منتجاتكم بكل إتقان، يُرجى تعبئة النموذج الرسمي عبر الرابط أدناه. يتضمن النموذج: الاسم، رقم الجوال، جهة
+          العمل، المنصب، والبريد الإلكتروني.
+        </p>
+        <a href="https://forms.gle/bqehrLM157dC9bPB7" target="_blank" rel="noopener noreferrer"
+          class="btn-primary w-full justify-center py-3.5">
+          فتح نموذج الطلب
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clients detail modal -->
+  <div id="modal-clients" class="modal-overlay" data-modal="clients" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel m-4">
+      <div class="p-6 md:p-8">
+        <div class="flex items-start justify-between gap-4 mb-6">
+          <h2 class="section-heading text-primary">عملاؤنا</h2>
+          <button type="button"
+            class="p-2 rounded-brand text-neutral-500 hover:bg-neutral-100 hover:text-neutral-800 transition-colors"
+            data-modal-close aria-label="إغلاق">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <p class="body-copy mb-4">تعاونّا مع جهات حكومية وخاصة، ومبادرات مجتمعية، ومراكز خدمية في مشاريع متنوعة للهدايا
+          التذكارية والفعاليات.</p>
+        <ul class="body-copy space-y-2 text-neutral-700">
+          <li>• جهات حكومية ومؤسسات رسمية</li>
+          <li>• مبادرات مجتمعية ومراكز خدمية</li>
+          <li>• شركات ومؤسسات قطاع خاص</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client logo detail modal (single client name) -->
+  <div id="modal-client-detail" class="modal-overlay" data-modal="client-detail" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel m-4 max-w-sm">
+      <div class="p-6">
+        <div class="flex items-start justify-between gap-4">
+          <h2 id="client-detail-name" class="text-body-lg font-bold text-primary"></h2>
+          <button type="button"
+            class="p-2 rounded-brand text-neutral-500 hover:bg-neutral-100 hover:text-neutral-800 transition-colors"
+            data-modal-close aria-label="إغلاق">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <p class="body-copy mt-2 text-neutral-600">شريكنا في صناعة تجارب هدية مميزة.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/clients-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      const content = document.getElementById("main-content");
+
+      setTimeout(() => {
+        preloader.style.opacity = 0;
+        preloader.style.transition = "opacity 0.7s ease";
+
         setTimeout(() => {
-          preloader.style.opacity = 0;
-          preloader.style.transition = "opacity 0.7s ease";
-    
-          setTimeout(() => {
-            preloader.style.display = "none";
-            content.classList.remove("opacity-0");
-            content.classList.add("opacity-100");
-          }, 700);
-        }, 500); 
-      });
-    </script>
-  </body>
+          preloader.style.display = "none";
+          content.classList.remove("opacity-0");
+          content.classList.add("opacity-100");
+        }, 700);
+      }, 500);
+    });
+  </script>
+</body>
+
 </html>
